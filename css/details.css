@@ -1,0 +1,166 @@
+:root {
+  /*Color Scheme*/
+  --background: #ffffff;
+  --accent: #2a3b49;
+  --text-black: #000000;
+  --text-white: #ffffff;
+  --text-secoundary: #7bffe9;
+  /* Margins */
+  --padding-l-r: 0 2.5%;
+  /*Fonts*/
+  --font: "Montserrat", sans-serif;
+}
+
+/* General Styling CSS */
+li {
+  list-style: none;
+}
+
+/* H Style */
+h1,
+h2,
+h3 {
+  font-family: var(--font);
+}
+
+/* P Style & button */
+button,
+a {
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+button {
+  color: var(--text-secoundary);
+  cursor: pointer;
+}
+
+a {
+  color: var(--text-white);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Navigation bar */
+.navHeader {
+  padding: var(--padding-l-r);
+  height: 50px;
+  background-color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pixify {
+  font-family: var(--font);
+  font-size: 36px;
+  color: var(--text-secoundary);
+}
+
+.navLink {
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 260px;
+  width: 400px;
+}
+
+.darkMode {
+  font-size: 16px;
+  background-color: transparent;
+  border: none;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font);
+}
+
+.main-container {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-img-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 60%;
+  width: 100%;
+}
+.h2-title{
+  font-size: 32px;
+  line-height: 44px;
+  height: 15%;
+}
+
+.p-name{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  height: 15%;
+}
+
+.curr-img {
+  margin-top: 20px;
+  max-width: 30%;
+  max-width: 50%;
+}
+
+.counting-id{
+  height: 10%;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.button-container {
+  width: 50%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30%;
+  margin-bottom: 10%;
+}
+
+.prev-btn,
+.next-btn {
+  width: 180px;
+  height: 80%;
+  background-color: var(--accent);
+  color: var(--text-secoundary);
+  border: white;
+  border-radius: 60px;
+  font-size: 20px;
+  
+}
+.prev-btn{
+  margin-right: 2%;
+}
+.next-btn{
+  margin-left: 2%;
+}
+
+@media (max-width:700px){
+  .navHeader{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .titleLink{
+    padding-top: 3%;
+  }
+  .navLink{
+    padding: 3% 0;
+  }
+}
